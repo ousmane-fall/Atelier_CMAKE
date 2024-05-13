@@ -1,7 +1,4 @@
-add_subdirectory(lib)
-add_executable(calculator main.c)
-target_link_libraries(calculator libcmake_minimum_required(VERSION 3.5)
-project(calculator C)
+
 
 # Ajout du répertoire include et src
 add_subdirectory(include)
