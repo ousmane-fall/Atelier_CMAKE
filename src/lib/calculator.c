@@ -17,6 +17,6 @@ double _div(double a, double b) {
 }
 
 // Définition de la fonction au carré
-double _square(double a) {
-    return a * a;
+double _square(double x) {
+    return x * x;
 }
