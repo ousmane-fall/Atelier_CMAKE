@@ -26,10 +26,12 @@ int main(int argc, char *argv[]){
 		r = _div(atof(a), atof(b));
 		printf("%lf",r);
 	}
+	else if (strcmp(op, "square") == 0) { // Ajout de la condition pour la fonction au carré
+		r = _square(atof(a)); // Appel de la fonction au carré
+		printf("%lf",r);
+	}
 	else {printf("Erreur de parametres");}
 	}
 	else {printf("Erreur de parametres");}
 	return 0;
 }
-
-		
