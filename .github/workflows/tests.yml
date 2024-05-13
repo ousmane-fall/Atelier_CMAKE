@@ -32,7 +32,7 @@ jobs:
 
 
           
-  Test_sub:
+  Test_Sub:
     runs-on: ubuntu-latest
     needs: Compilation
     steps:
@@ -48,7 +48,7 @@ jobs:
           ./src/calculator sub 10 5
 
           
-  Test_mul:
+  Test_Mul:
     runs-on: ubuntu-latest
     needs: Compilation
     steps:
@@ -64,7 +64,7 @@ jobs:
           ./src/calculator mul 10 5
 
 
-  Test_div:
+  Test_Div:
     runs-on: ubuntu-latest
     needs: Compilation
     steps:
@@ -78,3 +78,18 @@ jobs:
           cmake ..
           make
           ./src/calculator div 10 5
+
+  Test_Square:
+    runs-on: ubuntu-latest
+    needs: Compilation
+    steps:
+      - name: Test fonction square
+        run: |
+          last_directory=$(basename ${{ runner.workspace }})
+          git clone https://github.com/${{ github.repository }}.git
+          cd ./$last_directory
+          mkdir build
+          cd build
+          cmake ..
+          make
+          ./src/calculator square 10 
