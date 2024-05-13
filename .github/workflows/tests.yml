@@ -45,7 +45,7 @@ jobs:
           cd build
           cmake ..
           make
-          ./src/calculator add 10 5
+          ./src/calculator sub 10 5
 
           
   Test_mul:
@@ -61,7 +61,7 @@ jobs:
           cd build
           cmake ..
           make
-          ./src/calculator add 10 5
+          ./src/calculator mul 10 5
 
 
   Test_div:
@@ -77,4 +77,4 @@ jobs:
           cd build
           cmake ..
           make
-          ./src/calculator add 10 5
+          ./src/calculator div 10 5
